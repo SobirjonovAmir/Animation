@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 5px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bolder;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.title {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.typing_text {
+    width: 19ch;
+    animation: text 4s steps(19) infinite;
+
+}
+@keyframes text {
+    from{
+        width: 0;
+    }   
+}
+
+p {
+    font-size: 25px;
+    font-family: fantasy;
+    font-weight: 700px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1350px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background: yellow;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.item {
+    width: 120px;
+    height: 120px;
+    
+}
+
+.item1 {
+    background: blue;
+    animation-name: rectangle;
+    border-radius: 50%;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes rectangle {
+    0% {
+        border-radius: 50%;
+        transform: rotate(0deg);
+    }
+    50% {
+        border-radius: 0%;
+        transform: rotate(90deg);
+        
+    }
+    100% {
+        border-radius: 50%;
+        transform: rotate(180deg);
+    }
+    
+}
+
+
+.item2 {
+    animation: rainbow 2s infinite ease;
+}
+
+@keyframes rainbow {
+    0% {
+        background: pink;
+    }   
+    25% {
+        background: red;
+    }
+    50% {
+        background: blue;
+    }
+    75% {
+        background: green;
+    }
+    100% {
+        background: yellow;
+    }
+}
+.circle3 {
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.item3 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: blue;
+    animation: ball 3s  infinite;
+}
+
+@keyframes ball {
+    0% {
+        background: red;
+        transform: translateX(-115px);
+        border-radius: 50%;
+  
+    }
+    20%{
+        background: black;
+        transform: translateY(-115px) rotate(-90deg);
+        border-radius: 50%;
+    
+    }
+    40% {
+        background: green;
+        transform: translateX(115px) rotate(90deg);
+        border-radius: 0%;
+   
+    }
+    60%{
+        background: orange;
+        transform: translateY(115px);
+        border-radius: 50%;
+    }
+    80% {
+        background: blue;
+        transform: translateX(0px);
+        border-radius: 50%;
+    }
+    100% {
+        background: red;
+        transform: translateX(-115px);
+        border-radius: 50%;
+    }
+}
